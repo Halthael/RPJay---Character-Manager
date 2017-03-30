@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		538669941E8D741B00C86C9E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669931E8D741B00C86C9E /* Character.swift */; };
 		AA32A9551E8D636F001E8F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32A9541E8D636F001E8F9E /* AppDelegate.swift */; };
 		AA32A9571E8D636F001E8F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32A9561E8D636F001E8F9E /* ViewController.swift */; };
 		AA32A95A1E8D636F001E8F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA32A9581E8D636F001E8F9E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		538669931E8D741B00C86C9E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		AA32A9511E8D636F001E8F9E /* RPJay - character manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPJay - character manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA32A9541E8D636F001E8F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA32A9561E8D636F001E8F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		538669901E8D73D100C86C9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA32A95D1E8D636F001E8F9E /* LaunchScreen.storyboard */,
+				AA32A9581E8D636F001E8F9E /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		538669911E8D73D900C86C9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				538669931E8D741B00C86C9E /* Character.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		538669921E8D73E100C86C9E /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				AA32A9561E8D636F001E8F9E /* ViewController.swift */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
 		AA32A9481E8D636F001E8F9E = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				AA32A9541E8D636F001E8F9E /* AppDelegate.swift */,
-				AA32A9561E8D636F001E8F9E /* ViewController.swift */,
-				AA32A9581E8D636F001E8F9E /* Main.storyboard */,
+				538669921E8D73E100C86C9E /* Control */,
+				538669911E8D73D900C86C9E /* Model */,
+				538669901E8D73D100C86C9E /* View */,
 				AA32A95B1E8D636F001E8F9E /* Assets.xcassets */,
 				AA32A96E1E8D6B8A001E8F9E /* fullsizeoutput_22.jpeg */,
-				AA32A95D1E8D636F001E8F9E /* LaunchScreen.storyboard */,
 				AA32A9601E8D636F001E8F9E /* Info.plist */,
 			);
 			path = "RPJay - character manager";
@@ -141,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538669941E8D741B00C86C9E /* Character.swift in Sources */,
 				AA32A9571E8D636F001E8F9E /* ViewController.swift in Sources */,
 				AA32A9551E8D636F001E8F9E /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +332,7 @@
 				AA32A9651E8D636F001E8F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
