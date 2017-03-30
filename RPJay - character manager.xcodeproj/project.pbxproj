@@ -13,7 +13,6 @@
 		AA32A95A1E8D636F001E8F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA32A9581E8D636F001E8F9E /* Main.storyboard */; };
 		AA32A95C1E8D636F001E8F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA32A95B1E8D636F001E8F9E /* Assets.xcassets */; };
 		AA32A95F1E8D636F001E8F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA32A95D1E8D636F001E8F9E /* LaunchScreen.storyboard */; };
-		AA32A96F1E8D6B8A001E8F9E /* fullsizeoutput_22.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AA32A96E1E8D6B8A001E8F9E /* fullsizeoutput_22.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		AA32A95B1E8D636F001E8F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA32A95E1E8D636F001E8F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA32A9601E8D636F001E8F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA32A96E1E8D6B8A001E8F9E /* fullsizeoutput_22.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fullsizeoutput_22.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 				538669911E8D73D900C86C9E /* Model */,
 				538669901E8D73D100C86C9E /* View */,
 				AA32A95B1E8D636F001E8F9E /* Assets.xcassets */,
-				AA32A96E1E8D6B8A001E8F9E /* fullsizeoutput_22.jpeg */,
 				AA32A9601E8D636F001E8F9E /* Info.plist */,
 			);
 			path = "RPJay - character manager";
@@ -154,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA32A96F1E8D6B8A001E8F9E /* fullsizeoutput_22.jpeg in Resources */,
 				AA32A95F1E8D636F001E8F9E /* LaunchScreen.storyboard in Resources */,
 				AA32A95C1E8D636F001E8F9E /* Assets.xcassets in Resources */,
 				AA32A95A1E8D636F001E8F9E /* Main.storyboard in Resources */,
