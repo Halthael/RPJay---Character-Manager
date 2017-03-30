@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		538669941E8D741B00C86C9E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669931E8D741B00C86C9E /* Character.swift */; };
+		538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669951E8D89AA00C86C9E /* GenderSelectionController.swift */; };
+		538669981E8D89F000C86C9E /* FirstInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669971E8D89F000C86C9E /* FirstInfoController.swift */; };
+		5386699A1E8D8A2F00C86C9E /* BackgroundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669991E8D8A2F00C86C9E /* BackgroundController.swift */; };
+		5386699C1E8D8A5500C86C9E /* StatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386699B1E8D8A5500C86C9E /* StatusController.swift */; };
+		5386699E1E8D8A7100C86C9E /* GenerateStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386699D1E8D8A7100C86C9E /* GenerateStoryController.swift */; };
+		538669A01E8D8AA600C86C9E /* WriteStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */; };
+		538669A21E8D8F3300C86C9E /* CharacterInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */; };
+		538669A51E8D9CA700C86C9E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669A41E8D9CA700C86C9E /* FinishViewController.swift */; };
 		AA32A9551E8D636F001E8F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32A9541E8D636F001E8F9E /* AppDelegate.swift */; };
 		AA32A9571E8D636F001E8F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32A9561E8D636F001E8F9E /* ViewController.swift */; };
 		AA32A95A1E8D636F001E8F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA32A9581E8D636F001E8F9E /* Main.storyboard */; };
@@ -17,6 +25,14 @@
 
 /* Begin PBXFileReference section */
 		538669931E8D741B00C86C9E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		538669951E8D89AA00C86C9E /* GenderSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderSelectionController.swift; sourceTree = "<group>"; };
+		538669971E8D89F000C86C9E /* FirstInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstInfoController.swift; sourceTree = "<group>"; };
+		538669991E8D8A2F00C86C9E /* BackgroundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundController.swift; sourceTree = "<group>"; };
+		5386699B1E8D8A5500C86C9E /* StatusController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusController.swift; sourceTree = "<group>"; };
+		5386699D1E8D8A7100C86C9E /* GenerateStoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateStoryController.swift; sourceTree = "<group>"; };
+		5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteStoryController.swift; sourceTree = "<group>"; };
+		538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterInfoController.swift; sourceTree = "<group>"; };
+		538669A41E8D9CA700C86C9E /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		AA32A9511E8D636F001E8F9E /* RPJay - character manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPJay - character manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA32A9541E8D636F001E8F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA32A9561E8D636F001E8F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				AA32A9561E8D636F001E8F9E /* ViewController.swift */,
+				538669951E8D89AA00C86C9E /* GenderSelectionController.swift */,
+				538669971E8D89F000C86C9E /* FirstInfoController.swift */,
+				538669991E8D8A2F00C86C9E /* BackgroundController.swift */,
+				5386699B1E8D8A5500C86C9E /* StatusController.swift */,
+				5386699D1E8D8A7100C86C9E /* GenerateStoryController.swift */,
+				5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */,
+				538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */,
+				538669A41E8D9CA700C86C9E /* FinishViewController.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -164,9 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5386699E1E8D8A7100C86C9E /* GenerateStoryController.swift in Sources */,
+				538669A01E8D8AA600C86C9E /* WriteStoryController.swift in Sources */,
 				538669941E8D741B00C86C9E /* Character.swift in Sources */,
+				538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */,
+				538669981E8D89F000C86C9E /* FirstInfoController.swift in Sources */,
+				5386699C1E8D8A5500C86C9E /* StatusController.swift in Sources */,
+				5386699A1E8D8A2F00C86C9E /* BackgroundController.swift in Sources */,
+				538669A21E8D8F3300C86C9E /* CharacterInfoController.swift in Sources */,
 				AA32A9571E8D636F001E8F9E /* ViewController.swift in Sources */,
 				AA32A9551E8D636F001E8F9E /* AppDelegate.swift in Sources */,
+				538669A51E8D9CA700C86C9E /* FinishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VVa-WQ-ZuO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="snp-KI-5aI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,22 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="uyQ-91-nN7">
-            <objects>
-                <navigationController id="VVa-WQ-ZuO" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lst-jS-WML">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="gOC-yS-P5N" kind="relationship" relationship="rootViewController" id="11s-0x-IIT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MkU-o9-o3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1638" y="136"/>
-        </scene>
         <!--Nome do programa-->
         <scene sceneID="7Kh-uc-WN0">
             <objects>
@@ -73,12 +57,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JY6-Lq-9MC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-754.39999999999998" y="135.38230884557723"/>
+            <point key="canvasLocation" x="-934" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Gender Selection Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GenderSelectionController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -114,15 +98,32 @@
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.38039215686274508" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HUL-nF-Zdc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="gBz-ln-2jN">
+            <objects>
+                <navigationController id="snp-KI-5aI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZSB-A8-3EY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gOC-yS-P5N" kind="relationship" relationship="rootViewController" id="AWh-cf-9gO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7IV-LZ-kV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1775" y="134"/>
+        </scene>
+        <!--First Info Controller-->
         <scene sceneID="RGt-vr-Asu">
             <objects>
-                <viewController id="C0m-3z-k5H" sceneMemberID="viewController">
+                <viewController id="C0m-3z-k5H" customClass="FirstInfoController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GxI-We-OtW"/>
                         <viewControllerLayoutGuide type="bottom" id="bsQ-2W-4vt"/>
@@ -147,6 +148,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vs0-KU-b6o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57403081659999999" green="0.66387295719999995" blue="0.61869174240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.25097709889999997" green="0.36439883709999998" blue="0.40226742630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hir-Pv-84W">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.25098039220000001" green="0.3803921569" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIG-X8-gvv">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -204,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="1061.5999999999999" y="135.38230884557723"/>
         </scene>
-        <!--View Controller-->
+        <!--Background Controller-->
         <scene sceneID="gy5-jr-dbG">
             <objects>
-                <viewController id="h3Z-hu-EMc" sceneMemberID="viewController">
+                <viewController id="h3Z-hu-EMc" customClass="BackgroundController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oFV-zL-m2p"/>
                         <viewControllerLayoutGuide type="bottom" id="Uud-M4-V3s"/>
@@ -257,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="1965.5999999999999" y="135.38230884557723"/>
         </scene>
-        <!--View Controller-->
+        <!--Generate Story Controller-->
         <scene sceneID="C0g-qQ-a3I">
             <objects>
-                <viewController id="9za-DN-5mw" sceneMemberID="viewController">
+                <viewController id="9za-DN-5mw" customClass="GenerateStoryController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v4m-PF-H4k"/>
                         <viewControllerLayoutGuide type="bottom" id="DcJ-9T-EUb"/>
@@ -365,10 +382,10 @@
             </objects>
             <point key="canvasLocation" x="2933.5999999999999" y="500.59970014992507"/>
         </scene>
-        <!--View Controller-->
+        <!--Character Info Controller-->
         <scene sceneID="2K9-As-r8X">
             <objects>
-                <viewController id="uD6-m9-vpb" sceneMemberID="viewController">
+                <viewController id="uD6-m9-vpb" customClass="CharacterInfoController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jq1-Xr-bqd"/>
                         <viewControllerLayoutGuide type="bottom" id="bVR-1y-fxt"/>
@@ -516,12 +533,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCs-8A-rIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-754" y="1168"/>
+            <point key="canvasLocation" x="-935" y="1022"/>
         </scene>
-        <!--View Controller-->
+        <!--Status Controller-->
         <scene sceneID="xWj-B4-rgS">
             <objects>
-                <viewController id="fZk-8t-ljY" sceneMemberID="viewController">
+                <viewController id="fZk-8t-ljY" customClass="StatusController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nc0-rA-RDW"/>
                         <viewControllerLayoutGuide type="bottom" id="JNa-SK-tEP"/>
@@ -663,10 +680,10 @@
             </objects>
             <point key="canvasLocation" x="4088.8000000000002" y="134.48275862068968"/>
         </scene>
-        <!--View Controller-->
+        <!--Write Story Controller-->
         <scene sceneID="LDp-4y-hRg">
             <objects>
-                <viewController id="LZ1-WL-Gir" sceneMemberID="viewController">
+                <viewController id="LZ1-WL-Gir" customClass="WriteStoryController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GBL-GB-CVb"/>
                         <viewControllerLayoutGuide type="bottom" id="jEC-3f-wPR"/>
@@ -710,10 +727,10 @@
             </objects>
             <point key="canvasLocation" x="2933.5999999999999" y="-231.63418290854574"/>
         </scene>
-        <!--View Controller-->
+        <!--Finish View Controller-->
         <scene sceneID="ofn-8h-ch7">
             <objects>
-                <viewController id="2a8-d2-XWV" sceneMemberID="viewController">
+                <viewController id="2a8-d2-XWV" customClass="FinishViewController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zes-9e-iOY"/>
                         <viewControllerLayoutGuide type="bottom" id="ghh-yq-NE4"/>
@@ -869,6 +886,6 @@
         <image name="new" width="1771" height="1771"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Obo-0e-w8N"/>
+        <segue reference="Foy-U8-Dm6"/>
     </inferredMetricsTieBreakers>
 </document>
