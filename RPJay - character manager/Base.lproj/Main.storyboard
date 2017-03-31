@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Nome do programa-->
+        <!--Character Selection-->
         <scene sceneID="7Kh-uc-WN0">
             <objects>
                 <viewController id="gOC-yS-P5N" sceneMemberID="viewController">
@@ -38,28 +38,86 @@
                                     <color key="titleColor" red="0.3126811981" green="0.45445138219999998" blue="0.50488156080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="o7B-rS-iNg"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="29z-OK-4tQ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="new" translatesAutoresizingMaskIntoConstraints="NO" id="ffd-6I-fSr">
                                 <rect key="frame" x="172" y="617" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b5V-G9-NVo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b5V-G9-NVo">
                                 <rect key="frame" x="0.0" y="64" width="375" height="553"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="Pey-0V-T3O">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pey-0V-T3O" id="Uyl-MO-eEr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h8U-Uy-ySV">
+                                                    <rect key="frame" x="15" y="6" width="74" height="86"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="class/race" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ag-TY-BpB">
+                                                    <rect key="frame" x="262" y="30" width="78" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeE-kG-ckW">
+                                                    <rect key="frame" x="295" y="8" width="45" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="wfz-8A-NUd">
+                                                    <rect key="frame" x="184" y="59" width="150" height="2"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.16779105730100796" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </progressView>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="vzC-XM-Znt">
+                                                    <rect key="frame" x="184" y="77" width="150" height="2"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </progressView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-uF-ktN">
+                                                    <rect key="frame" x="148" y="50" width="28" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6Z-Xe-0GL">
+                                                    <rect key="frame" x="146" y="68" width="30" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="uD6-m9-vpb" kind="show" id="bJi-wc-2Wb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.25023192167282104" green="0.37988227605819702" blue="0.43022513389587402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nome do programa" id="v0V-Vm-DqO"/>
+                    <navigationItem key="navigationItem" title="Character Selection" id="v0V-Vm-DqO">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="pqG-2F-erq"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JY6-Lq-9MC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-934" y="134"/>
+            <point key="canvasLocation" x="-935.20000000000005" y="133.5832083958021"/>
         </scene>
-        <!--Gender Selection Controller-->
+        <!--Character Creation-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GenderSelectionController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,7 +138,7 @@
                                     <color key="titleColor" red="0.31268119812011719" green="0.45445138216018677" blue="0.50488156080245972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="C0m-3z-k5H" kind="show" id="wQc-3d-pCV"/>
+                                    <segue destination="C0m-3z-k5H" kind="show" id="Wzx-gr-1Uc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select gender:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRh-5L-pfE">
@@ -98,7 +156,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.38039215686274508" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HUL-nF-Zdc"/>
+                    <navigationItem key="navigationItem" title="Character Creation" id="HUL-nF-Zdc">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="jwR-0H-w90"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,14 +173,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="gOC-yS-P5N" kind="relationship" relationship="rootViewController" id="AWh-cf-9gO"/>
+                        <segue destination="gOC-yS-P5N" kind="relationship" relationship="rootViewController" id="kX5-1c-28x"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IV-LZ-kV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1775" y="134"/>
         </scene>
-        <!--First Info Controller-->
+        <!--Character Creation-->
         <scene sceneID="RGt-vr-Asu">
             <objects>
                 <viewController id="C0m-3z-k5H" customClass="FirstInfoController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,22 +208,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vs0-KU-b6o">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.57403081659999999" green="0.66387295719999995" blue="0.61869174240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" red="0.25097709889999997" green="0.36439883709999998" blue="0.40226742630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hir-Pv-84W">
-                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="&lt;">
-                                    <color key="titleColor" red="0.25098039220000001" green="0.3803921569" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIG-X8-gvv">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -173,7 +217,7 @@
                                     <color key="titleColor" red="0.3126811981" green="0.45445138219999998" blue="0.50488156080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="h3Z-hu-EMc" kind="show" id="kDl-bY-BcI"/>
+                                    <segue destination="h3Z-hu-EMc" kind="show" id="iJv-dg-ZFn"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08S-kk-4B2">
@@ -216,12 +260,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.31268119812011719" green="0.45445138216018677" blue="0.50488156080245972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Character Creation" id="oar-gS-7BG">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="344-n4-mGP"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzo-Jg-fUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.5999999999999" y="135.38230884557723"/>
+            <point key="canvasLocation" x="1063" y="134"/>
         </scene>
-        <!--Background Controller-->
+        <!--Character Creation-->
         <scene sceneID="gy5-jr-dbG">
             <objects>
                 <viewController id="h3Z-hu-EMc" customClass="BackgroundController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
@@ -251,7 +298,7 @@
                                     <color key="titleShadowColor" red="0.81876009702682495" green="0.86083883047103882" blue="0.7486003041267395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9za-DN-5mw" kind="show" id="MY3-4i-mOX"/>
+                                    <segue destination="9za-DN-5mw" kind="show" id="beq-hh-bxL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpd-rH-Cic">
@@ -263,18 +310,21 @@
                                     <color key="titleColor" red="0.25098039215686274" green="0.38039215686274508" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LZ1-WL-Gir" kind="show" id="Cr8-TC-J8S"/>
+                                    <segue destination="LZ1-WL-Gir" kind="show" id="waH-Kt-f7P"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.38039215686274508" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Character Creation" id="s3s-1I-BTX">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wyr-r6-piv"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Udf-5G-3O3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1965.5999999999999" y="135.38230884557723"/>
         </scene>
-        <!--Generate Story Controller-->
+        <!--Character Creation-->
         <scene sceneID="C0g-qQ-a3I">
             <objects>
                 <viewController id="9za-DN-5mw" customClass="GenerateStoryController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
@@ -303,7 +353,7 @@
                                     <color key="titleColor" red="0.3126811981" green="0.45445138219999998" blue="0.50488156080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fZk-8t-ljY" kind="show" id="Foy-U8-Dm6"/>
+                                    <segue destination="fZk-8t-ljY" kind="show" id="rq6-OA-Vg0"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SKg-cD-tr3">
@@ -377,6 +427,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.25023192167282104" green="0.37988227605819702" blue="0.43022513389587402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Character Creation" id="uI6-Tg-qMc">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Avt-dw-gKG"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5F4-kk-UA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -535,7 +588,7 @@
             </objects>
             <point key="canvasLocation" x="-935" y="1022"/>
         </scene>
-        <!--Status Controller-->
+        <!--Character Creation-->
         <scene sceneID="xWj-B4-rgS">
             <objects>
                 <viewController id="fZk-8t-ljY" customClass="StatusController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
@@ -555,14 +608,6 @@
                                 <color key="textColor" red="0.25097709889999997" green="0.36439883709999998" blue="0.40226742630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOE-RV-eaZ">
-                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="&lt;">
-                                    <color key="titleColor" red="0.25098039220000001" green="0.3803921569" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d58-LA-dk3">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -593,7 +638,7 @@
                                             <color key="titleColor" red="0.3126811981" green="0.45445138219999998" blue="0.50488156080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="2a8-d2-XWV" kind="show" id="ra6-hO-jNA"/>
+                                            <segue destination="2a8-d2-XWV" kind="show" id="Qts-Vi-mDC"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O48-zx-39U">
@@ -675,12 +720,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.294903963804245" green="0.38754788041114807" blue="0.44188553094863892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Character Creation" id="VFc-Fn-hPa">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="GFt-8R-xmb"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNu-lR-9my" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4088.8000000000002" y="134.48275862068968"/>
         </scene>
-        <!--Write Story Controller-->
+        <!--Character Creation-->
         <scene sceneID="LDp-4y-hRg">
             <objects>
                 <viewController id="LZ1-WL-Gir" customClass="WriteStoryController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
@@ -692,7 +740,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Background" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQY-Ag-Z1t">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Write your own..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQY-Ag-Z1t">
                                 <rect key="frame" x="0.0" y="60" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="1" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -709,7 +757,7 @@
                                     <color key="titleColor" red="0.3126811981" green="0.45445138219999998" blue="0.50488156080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fZk-8t-ljY" kind="show" id="Obo-0e-w8N"/>
+                                    <segue destination="fZk-8t-ljY" kind="show" id="Wkm-Hp-34J"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kNw-Ec-tqW">
@@ -722,12 +770,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.25023192167282104" green="0.37988227605819702" blue="0.43022513389587402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Character Creation" id="XKR-OX-4Gg">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wtp-c0-dvx"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvr-WO-cuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2933.5999999999999" y="-231.63418290854574"/>
         </scene>
-        <!--Finish View Controller-->
+        <!--Character Creation-->
         <scene sceneID="ofn-8h-ch7">
             <objects>
                 <viewController id="2a8-d2-XWV" customClass="FinishViewController" customModule="RPJay___character_manager" customModuleProvider="target" sceneMemberID="viewController">
@@ -875,6 +926,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.25023192170000003" green="0.37988227610000003" blue="0.4302251339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Character Creation" id="g6X-H1-Tf7">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="dum-DT-ior"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tka-Zu-mL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -886,6 +940,6 @@
         <image name="new" width="1771" height="1771"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Foy-U8-Dm6"/>
+        <segue reference="rq6-OA-Vg0"/>
     </inferredMetricsTieBreakers>
 </document>
