@@ -8,7 +8,9 @@
 
 import UIKit
 
-class FirstInfoController: UIViewController {
+class FirstInfoController: UIViewController , CharacterProtocol {
+    
+    var newCharacter:Character?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +23,15 @@ class FirstInfoController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "goToBackgroundSegue"){
+            var destinationViewController = segue.destination as! CharacterProtocol
+            destinationViewController.newCharacter = self.newCharacter
+        }
     }
-    */
+    
+    @IBAction func nextPressed(){
+        performSegue(withIdentifier: "goToBackgroundSegue", sender: self.navigationController?.navigationItem.rightBarButtonItem)
+    }
 
 }

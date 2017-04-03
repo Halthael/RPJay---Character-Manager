@@ -8,8 +8,10 @@
 
 import UIKit
 
-class WriteStoryController: UIViewController {
-
+class WriteStoryController: UIViewController, CharacterProtocol {
+    
+    var newCharacter:Character?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,14 +24,15 @@ class WriteStoryController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "goToStatusWSegue"){
+            var destinationViewController = segue.destination as! CharacterProtocol
+            destinationViewController.newCharacter = self.newCharacter
+        }
     }
-    */
+    
+    @IBAction func nextPressed(){
+        performSegue(withIdentifier: "goToStatusWSegue", sender: self.navigationController?.navigationItem.rightBarButtonItem)
+    }
 
 }

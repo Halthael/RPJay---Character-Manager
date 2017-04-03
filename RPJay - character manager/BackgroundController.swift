@@ -8,8 +8,10 @@
 
 import UIKit
 
-class BackgroundController: UIViewController {
-
+class BackgroundController: UIViewController , CharacterProtocol {
+    
+    var newCharacter:Character?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +23,24 @@ class BackgroundController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func optionPressed(_ sender: UIButton){
+        if(sender.currentTitle == "Generate"){
+            performSegue(withIdentifier: "goToGenerateSegue", sender: sender)
+        }
+        else{
+            performSegue(withIdentifier: "goToWriteSegue", sender: sender)
+        }
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "goToWriteSegue"){
+            var destinationViewController = segue.destination as! CharacterProtocol
+            destinationViewController.newCharacter = self.newCharacter
+        }
+        if(segue.identifier == "goToGenerateSegue"){
+            var destinationViewController = segue.destination as! CharacterProtocol
+            destinationViewController.newCharacter = self.newCharacter
+        }
+    }
 
 }

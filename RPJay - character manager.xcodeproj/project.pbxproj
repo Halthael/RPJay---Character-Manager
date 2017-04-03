@@ -16,6 +16,8 @@
 		538669A01E8D8AA600C86C9E /* WriteStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */; };
 		538669A21E8D8F3300C86C9E /* CharacterInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */; };
 		538669A51E8D9CA700C86C9E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669A41E8D9CA700C86C9E /* FinishViewController.swift */; };
+		53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */; };
+		53BEF6D31E927FC40034B0BF /* CharacterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */; };
 		AA32A9551E8D636F001E8F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32A9541E8D636F001E8F9E /* AppDelegate.swift */; };
 		AA32A9571E8D636F001E8F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32A9561E8D636F001E8F9E /* ViewController.swift */; };
 		AA32A95A1E8D636F001E8F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA32A9581E8D636F001E8F9E /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteStoryController.swift; sourceTree = "<group>"; };
 		538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterInfoController.swift; sourceTree = "<group>"; };
 		538669A41E8D9CA700C86C9E /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionController.swift; sourceTree = "<group>"; };
+		53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterProtocol.swift; sourceTree = "<group>"; };
 		AA32A9511E8D636F001E8F9E /* RPJay - character manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPJay - character manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA32A9541E8D636F001E8F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA32A9561E8D636F001E8F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */,
 				538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */,
 				538669A41E8D9CA700C86C9E /* FinishViewController.swift */,
+				53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */,
+				53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -188,10 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BEF6D31E927FC40034B0BF /* CharacterProtocol.swift in Sources */,
 				5386699E1E8D8A7100C86C9E /* GenerateStoryController.swift in Sources */,
 				538669A01E8D8AA600C86C9E /* WriteStoryController.swift in Sources */,
 				538669941E8D741B00C86C9E /* Character.swift in Sources */,
 				538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */,
+				53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */,
 				538669981E8D89F000C86C9E /* FirstInfoController.swift in Sources */,
 				5386699C1E8D8A5500C86C9E /* StatusController.swift in Sources */,
 				5386699A1E8D8A2F00C86C9E /* BackgroundController.swift in Sources */,

@@ -8,8 +8,10 @@
 
 import UIKit
 
-class FinishViewController: UIViewController {
-
+class FinishViewController: UIViewController , CharacterProtocol {
+    
+    var newCharacter:Character?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,14 +24,11 @@ class FinishViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func finishIsPressed(){
+        //Saves character data:
+        
+        //Pop all views:
+         self.navigationController?.popToRootViewController(animated: true)
     }
-    */
 
 }
