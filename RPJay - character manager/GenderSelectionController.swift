@@ -36,11 +36,13 @@ class GenderSelectionController: UIViewController, CharacterProtocol {
         
         if sender == maleButton {
             newCharacter?.characterGender = "Male"
+            newCharacter?.characterName = "Halths"
             genderLabel.text = "Male"
         }
         
         if sender == femaleButton {
             newCharacter?.characterGender = "Female"
+            newCharacter?.characterName = "Halths"
             genderLabel.text = "Female"
         }
     }
