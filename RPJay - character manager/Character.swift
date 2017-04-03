@@ -10,23 +10,25 @@ import UIKit
 
 class Character: NSObject {
     
-    public private(set) var characterName:String
-    public private(set) var characterClass:String
-    public private(set) var characterRace:String
-    public private(set) var characterStory:String
-    public private(set) var health:Int
-    public private(set) var mana:Int
-    public private(set) var strength:Int
-    public private(set) var intelligence:Int
-    public private(set) var agility:Int
-    public private(set) var vitality:Int
-    public private(set) var charisma:Int
-   
+    public var characterName:String
+    public var characterClass:String
+    public var characterRace:String
+    public var characterStory:String
+    public var characterGender:String
+    public var health:Int
+    public var mana:Int
+    public var strength:Int
+    public var intelligence:Int
+    public var agility:Int
+    public var vitality:Int
+    public var charisma:Int
+    
     override init(){
         self.characterName = String()
         self.characterClass = String()
         self.characterRace = String()
         self.characterStory = String()
+        self.characterGender = String()
         self.health = 100
         self.mana = 100
         self.strength = 10
