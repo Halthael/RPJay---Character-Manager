@@ -24,6 +24,7 @@ class FirstInfoController: UIViewController , CharacterProtocol {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.newCharacter?.characterIcon = UIImage(named: "default.png")!
         if(segue.identifier == "goToBackgroundSegue"){
             var destinationViewController = segue.destination as! CharacterProtocol
             destinationViewController.newCharacter = self.newCharacter

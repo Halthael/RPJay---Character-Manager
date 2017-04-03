@@ -8,13 +8,16 @@
 
 import UIKit
 
-class CharacterSelectionController: UIViewController, UITableViewDataSource {
+class CharacterSelectionController: UIViewController, UITableViewDataSource, UITableViewDelegate, CharacterProtocol {
 
     @IBOutlet weak var tableView: UITableView!
-    public static var characterMemory:[Character]?
+    public static var characterMemory:[Character]? = [Character]()
+    var newCharacter: Character?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
         tableView.reloadData()
         // Do any additional setup after loading the view.
     }
@@ -29,7 +32,11 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 10
+        return CharacterSelectionController.characterMemory!.count
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToCharacterInfoSegue" , sender: CharacterSelectionController.characterMemory?[indexPath.row])
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -43,27 +50,13 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource {
         cell.manaBar.progress = 1.0
         return cell
     }
-
-}
-
-class CellController: UITableViewCell {
     
-    @IBOutlet weak var icon: UIImageView!
-    @IBOutlet weak var name:UILabel!
-    @IBOutlet weak var raceAndClass:UILabel!
-    @IBOutlet weak var hpLabel:UILabel!
-    @IBOutlet weak var mpLabel:UILabel!
-    @IBOutlet weak var healthBar:UIProgressView!
-    @IBOutlet weak var manaBar:UIProgressView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "goToCharacterInfoSegue"){
+            var destinationViewController = segue.destination as! CharacterProtocol
+            self.newCharacter = sender as! Character?
+            destinationViewController.newCharacter = self.newCharacter
+        }
     }
     
 }

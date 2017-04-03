@@ -8,8 +8,10 @@
 
 import UIKit
 
-class CharacterInfoController: UIViewController {
-
+class CharacterInfoController: UIViewController, CharacterProtocol {
+    
+    var newCharacter: Character?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
