@@ -10,11 +10,14 @@ import UIKit
 
 class Character: NSObject {
     
+    public var characterIcon:UIImage
+    
     public var characterName:String
     public var characterClass:String
     public var characterRace:String
     public var characterStory:String
     public var characterGender:String
+    
     public var health:Int
     public var mana:Int
     public var strength:Int
@@ -24,6 +27,7 @@ class Character: NSObject {
     public var charisma:Int
     
     override init(){
+        self.characterIcon = UIImage()
         self.characterName = String()
         self.characterClass = String()
         self.characterRace = String()

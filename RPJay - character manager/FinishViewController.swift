@@ -26,7 +26,7 @@ class FinishViewController: UIViewController , CharacterProtocol {
 
     @IBAction func finishIsPressed(){
         //Saves character data:
-        
+        CharacterSelectionController.characterMemory?.append(newCharacter!)
         //Pop all views:
          self.navigationController?.popToRootViewController(animated: true)
     }

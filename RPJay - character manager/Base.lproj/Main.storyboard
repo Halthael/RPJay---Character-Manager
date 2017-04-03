@@ -50,7 +50,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="Pey-0V-T3O">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="Pey-0V-T3O" customClass="CellController" customModule="RPJay___character_manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pey-0V-T3O" id="Uyl-MO-eEr">
@@ -100,6 +100,15 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="healthBar" destination="wfz-8A-NUd" id="z1C-N9-ccG"/>
+                                            <outlet property="hpLabel" destination="lsK-uF-ktN" id="aWz-Ch-yUy"/>
+                                            <outlet property="icon" destination="h8U-Uy-ySV" id="qJe-3n-Wq9"/>
+                                            <outlet property="manaBar" destination="vzC-XM-Znt" id="BCv-VX-cZe"/>
+                                            <outlet property="mpLabel" destination="v6Z-Xe-0GL" id="PjN-g6-j2f"/>
+                                            <outlet property="name" destination="BeE-kG-ckW" id="jOh-Gg-Mpb"/>
+                                            <outlet property="raceAndClass" destination="2ag-TY-BpB" id="6Gl-ex-uEl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -110,12 +119,13 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="pqG-2F-erq"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="b5V-G9-NVo" id="aCs-lB-ahO"/>
                         <segue destination="uD6-m9-vpb" kind="show" identifier="goToCharacterInfoSegue" id="1T4-GQ-1of"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JY6-Lq-9MC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-935.20000000000005" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-972" y="134"/>
         </scene>
         <!--Gender Selection-->
         <scene sceneID="tne-QT-ifu">
