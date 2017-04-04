@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533309BA1E943B23008DF646 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533309B91E943B23008DF646 /* QuestionController.swift */; };
+		533309BC1E943CD8008DF646 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533309BB1E943CD8008DF646 /* Question.swift */; };
 		5351F6271E92E27500D92D53 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351F6261E92E27500D92D53 /* CellController.swift */; };
 		538669941E8D741B00C86C9E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669931E8D741B00C86C9E /* Character.swift */; };
 		538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669951E8D89AA00C86C9E /* GenderSelectionController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		533309B91E943B23008DF646 /* QuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
+		533309BB1E943CD8008DF646 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5351F6261E92E27500D92D53 /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		538669931E8D741B00C86C9E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		538669951E8D89AA00C86C9E /* GenderSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderSelectionController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				538669931E8D741B00C86C9E /* Character.swift */,
+				53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */,
+				533309BB1E943CD8008DF646 /* Question.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -86,8 +92,8 @@
 				538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */,
 				538669A41E8D9CA700C86C9E /* FinishViewController.swift */,
 				53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */,
-				53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */,
 				5351F6261E92E27500D92D53 /* CellController.swift */,
+				533309B91E943B23008DF646 /* QuestionController.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533309BC1E943CD8008DF646 /* Question.swift in Sources */,
 				53BEF6D31E927FC40034B0BF /* CharacterProtocol.swift in Sources */,
 				5386699E1E8D8A7100C86C9E /* GenerateStoryController.swift in Sources */,
 				538669A01E8D8AA600C86C9E /* WriteStoryController.swift in Sources */,
@@ -201,6 +208,7 @@
 				538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */,
 				53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */,
 				538669981E8D89F000C86C9E /* FirstInfoController.swift in Sources */,
+				533309BA1E943B23008DF646 /* QuestionController.swift in Sources */,
 				5386699C1E8D8A5500C86C9E /* StatusController.swift in Sources */,
 				5386699A1E8D8A2F00C86C9E /* BackgroundController.swift in Sources */,
 				538669A21E8D8F3300C86C9E /* CharacterInfoController.swift in Sources */,
