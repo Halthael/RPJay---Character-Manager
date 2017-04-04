@@ -36,13 +36,11 @@ class GenderSelectionController: UIViewController, CharacterProtocol {
         
         if sender == maleButton {
             newCharacter?.characterGender = "Male"
-            newCharacter?.characterName = "Halths"
             genderLabel.text = "Male"
         }
         
         if sender == femaleButton {
             newCharacter?.characterGender = "Female"
-            newCharacter?.characterName = "Halths"
             genderLabel.text = "Female"
         }
     }
@@ -54,8 +52,12 @@ class GenderSelectionController: UIViewController, CharacterProtocol {
         }
     }
     
-   @IBAction func nextPressed(){
-        performSegue(withIdentifier: "goToFirstInfoSegue", sender: self.navigationController?.navigationItem.rightBarButtonItem)
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if(identifier == "goToFirstInfoSegue"){
+            if(genderLabel.text?.isEmpty == true){
+                return false
+            }
+        }
+        return true
     }
-
 }

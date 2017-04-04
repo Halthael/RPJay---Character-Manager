@@ -11,7 +11,8 @@ import UIKit
 class GenerateStoryController: UIViewController , CharacterProtocol {
     
     var newCharacter:Character?
-
+    var condition = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,7 +31,12 @@ class GenerateStoryController: UIViewController , CharacterProtocol {
         }
     }
     
-    @IBAction func nextPressed(){
-        performSegue(withIdentifier: "goToStatusGSegue", sender: self.navigationController?.navigationItem.rightBarButtonItem)
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if(identifier == "goToStatusGSegue"){
+            if(condition == true){
+                return false
+            }
+        }
+        return true
     }
 }

@@ -30,8 +30,4 @@ class StatusController: UIViewController , CharacterProtocol {
             destinationViewController.newCharacter = self.newCharacter
         }
     }
-    
-    @IBAction func nextPressed(){
-        performSegue(withIdentifier: "goToFinishSegue", sender: self.navigationController?.navigationItem.rightBarButtonItem)
-    }
 }

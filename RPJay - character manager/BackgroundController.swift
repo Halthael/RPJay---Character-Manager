@@ -23,15 +23,6 @@ class BackgroundController: UIViewController , CharacterProtocol {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func optionPressed(_ sender: UIButton){
-        if(sender.currentTitle == "Generate"){
-            performSegue(withIdentifier: "goToGenerateSegue", sender: sender)
-        }
-        else{
-            performSegue(withIdentifier: "goToWriteSegue", sender: sender)
-        }
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "goToWriteSegue"){
             var destinationViewController = segue.destination as! CharacterProtocol

@@ -8,14 +8,16 @@
 
 import UIKit
 
-class WriteStoryController: UIViewController, CharacterProtocol {
+class WriteStoryController: UIViewController, CharacterProtocol, UITextViewDelegate {
     
     var newCharacter:Character?
     
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        textView.delegate = self
+        self.automaticallyAdjustsScrollViewInsets = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,16 +25,25 @@ class WriteStoryController: UIViewController, CharacterProtocol {
         // Dispose of any resources that can be recreated.
     }
     
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.newCharacter?.characterStory = textView.text
+        
         if(segue.identifier == "goToStatusWSegue"){
             var destinationViewController = segue.destination as! CharacterProtocol
             destinationViewController.newCharacter = self.newCharacter
         }
     }
     
-    @IBAction func nextPressed(){
-        performSegue(withIdentifier: "goToStatusWSegue", sender: self.navigationController?.navigationItem.rightBarButtonItem)
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if(identifier == "goToStatusWSegue"){
+            if(self.textView.text.isEmpty == true){
+                return false
+            }
+        }
+        return true
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
