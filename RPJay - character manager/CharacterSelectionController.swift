@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CharacterSelectionController: UIViewController, UITableViewDataSource, UITableViewDelegate, CharacterProtocol {
 
@@ -17,11 +18,54 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        CharacterSelectionController.characterMemory = self.getAllCharacters()
+        
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
+        
+        
         // Do any additional setup after loading the view.
     }
+    
+    fileprivate  func getAllCharacters() -> [Character] {
+        var storedUsers: [Character]
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "PlayerChar")
+        do {
+            let results = try CMDataController.shared.performFetchRequest(request: request)
+            storedUsers = results.map({ (anyEntity) -> Character in
+                
+                let playerChar = anyEntity as! PlayerChar
+                
+                let character = Character()
+                
+                // TODO: fill character
+                //BASICS
+                character.characterName = playerChar.name!
+                character.characterGender = playerChar.gender!
+                character.characterClass = playerChar.classProfession!
+                character.characterRace = playerChar.race!
+                character.characterStory = playerChar.story!
+                //SKILLS
+                character.statusTable.agility = Int(playerChar.agility)
+                character.statusTable.charisma = Int(playerChar.charisma)
+                character.statusTable.health = Int(playerChar.health)
+                character.statusTable.intelligence = Int(playerChar.intelligence)
+                character.statusTable.mana = Int(playerChar.mana)
+                character.statusTable.strength = Int(playerChar.strenght)
+                character.statusTable.vitality = Int(playerChar.vitality)
+                
+                return character
+            })
+        } catch {
+            storedUsers = [Character]()
+        }
+        
+        return storedUsers
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

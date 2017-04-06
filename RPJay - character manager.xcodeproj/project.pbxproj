@@ -28,6 +28,10 @@
 		538669A51E8D9CA700C86C9E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669A41E8D9CA700C86C9E /* FinishViewController.swift */; };
 		53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */; };
 		53BEF6D31E927FC40034B0BF /* CharacterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */; };
+		9686F3D11E93E11800318562 /* CMData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9686F3CF1E93E11800318562 /* CMData.xcdatamodeld */; };
+		9686F3D41E93E70A00318562 /* CMDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686F3D31E93E70A00318562 /* CMDataController.swift */; };
+		9686F3E81E96942000318562 /* PlayerChar+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686F3E61E96942000318562 /* PlayerChar+CoreDataClass.swift */; };
+		9686F3E91E96942000318562 /* PlayerChar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686F3E71E96942000318562 /* PlayerChar+CoreDataProperties.swift */; };
 		AA32A9551E8D636F001E8F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32A9541E8D636F001E8F9E /* AppDelegate.swift */; };
 		AA32A95A1E8D636F001E8F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA32A9581E8D636F001E8F9E /* Main.storyboard */; };
 		AA32A95C1E8D636F001E8F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA32A95B1E8D636F001E8F9E /* Assets.xcassets */; };
@@ -56,6 +60,10 @@
 		538669A41E8D9CA700C86C9E /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionController.swift; sourceTree = "<group>"; };
 		53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterProtocol.swift; sourceTree = "<group>"; };
+		9686F3D01E93E11800318562 /* CMData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CMData.xcdatamodel; sourceTree = "<group>"; };
+		9686F3D31E93E70A00318562 /* CMDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDataController.swift; sourceTree = "<group>"; };
+		9686F3E61E96942000318562 /* PlayerChar+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayerChar+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9686F3E71E96942000318562 /* PlayerChar+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayerChar+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA32A9511E8D636F001E8F9E /* RPJay - character manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPJay - character manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA32A9541E8D636F001E8F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA32A9591E8D636F001E8F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +127,25 @@
 			name = Control;
 			sourceTree = "<group>";
 		};
+		9686F3D21E93E1A600318562 /* CMData */ = {
+			isa = PBXGroup;
+			children = (
+				9686F3E11E968F1500318562 /* Models */,
+				9686F3CF1E93E11800318562 /* CMData.xcdatamodeld */,
+				9686F3D31E93E70A00318562 /* CMDataController.swift */,
+			);
+			name = CMData;
+			sourceTree = "<group>";
+		};
+		9686F3E11E968F1500318562 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9686F3E61E96942000318562 /* PlayerChar+CoreDataClass.swift */,
+				9686F3E71E96942000318562 /* PlayerChar+CoreDataProperties.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		AA32A9481E8D636F001E8F9E = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +171,7 @@
 				538669901E8D73D100C86C9E /* View */,
 				AA32A95B1E8D636F001E8F9E /* Assets.xcassets */,
 				AA32A9601E8D636F001E8F9E /* Info.plist */,
+				9686F3D21E93E1A600318562 /* CMData */,
 			);
 			path = "RPJay - character manager";
 			sourceTree = "<group>";
@@ -230,6 +258,7 @@
 				531104E41E95323400B7AE9F /* QuestionBank.swift in Sources */,
 				538669941E8D741B00C86C9E /* Character.swift in Sources */,
 				538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */,
+				9686F3D41E93E70A00318562 /* CMDataController.swift in Sources */,
 				53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */,
 				538669981E8D89F000C86C9E /* FirstInfoController.swift in Sources */,
 				531104E01E952A8F00B7AE9F /* ShakeExtension.swift in Sources */,
@@ -237,11 +266,14 @@
 				531104E61E9540E000B7AE9F /* ResponseBank.swift in Sources */,
 				5386699C1E8D8A5500C86C9E /* StatusController.swift in Sources */,
 				5386699A1E8D8A2F00C86C9E /* BackgroundController.swift in Sources */,
+				9686F3E81E96942000318562 /* PlayerChar+CoreDataClass.swift in Sources */,
+				9686F3D11E93E11800318562 /* CMData.xcdatamodeld in Sources */,
 				538669A21E8D8F3300C86C9E /* CharacterInfoController.swift in Sources */,
 				531104EC1E956EB200B7AE9F /* StatusTable.swift in Sources */,
 				531104EE1E956F9500B7AE9F /* PrioritiesTable.swift in Sources */,
 				AA32A9551E8D636F001E8F9E /* AppDelegate.swift in Sources */,
 				5351F6271E92E27500D92D53 /* CellController.swift in Sources */,
+				9686F3E91E96942000318562 /* PlayerChar+CoreDataProperties.swift in Sources */,
 				538669A51E8D9CA700C86C9E /* FinishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +439,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9686F3CF1E93E11800318562 /* CMData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9686F3D01E93E11800318562 /* CMData.xcdatamodel */,
+			);
+			currentVersion = 9686F3D01E93E11800318562 /* CMData.xcdatamodel */;
+			path = CMData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AA32A9491E8D636F001E8F9E /* Project object */;
 }

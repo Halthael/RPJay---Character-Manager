@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class FinishViewController: UIViewController , CharacterProtocol {
     
@@ -57,6 +58,29 @@ class FinishViewController: UIViewController , CharacterProtocol {
     @IBAction func finishIsPressed(){
         //Saves character data:
         CharacterSelectionController.characterMemory?.append(newCharacter!)
+        
+        let player:PlayerChar = NSEntityDescription.insertNewObject(forEntityName: "PlayerChar", into: CMDataController.shared.persistentContainer.viewContext) as! PlayerChar
+        
+        //BASICS
+        player.name = newCharacter?.characterName
+        player.gender = newCharacter?.characterGender
+        player.race = newCharacter?.characterRace
+        player.classProfession = newCharacter?.characterClass
+        player.story = newCharacter?.characterStory
+        
+        //SKILLS
+        player.agility = Int16((newCharacter?.statusTable.agility)!)
+        player.charisma = Int16((newCharacter?.statusTable.charisma)!)
+        player.health = Int16((newCharacter?.statusTable.health)!)
+        player.intelligence = Int16((newCharacter?.statusTable.intelligence)!)
+        player.mana = Int16((newCharacter?.statusTable.mana)!)
+        player.strenght = Int16((newCharacter?.statusTable.strength)!)
+        player.vitality = Int16((newCharacter?.statusTable.vitality)!)
+        
+        CMDataController.shared.saveContext()
+        
+        print(player)
+        
         //Pop all views:
          self.navigationController?.popToRootViewController(animated: true)
     }
