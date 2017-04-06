@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		531104E01E952A8F00B7AE9F /* ShakeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531104DF1E952A8F00B7AE9F /* ShakeExtension.swift */; };
+		531104E21E952DC800B7AE9F /* QuestionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531104E11E952DC800B7AE9F /* QuestionProtocol.swift */; };
+		531104E41E95323400B7AE9F /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531104E31E95323400B7AE9F /* QuestionBank.swift */; };
+		531104E61E9540E000B7AE9F /* ResponseBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531104E51E9540E000B7AE9F /* ResponseBank.swift */; };
+		531104E81E95648400B7AE9F /* StatusSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531104E71E95648400B7AE9F /* StatusSelection.swift */; };
+		531104EC1E956EB200B7AE9F /* StatusTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531104EB1E956EB200B7AE9F /* StatusTable.swift */; };
+		531104EE1E956F9500B7AE9F /* PrioritiesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531104ED1E956F9500B7AE9F /* PrioritiesTable.swift */; };
 		533309BA1E943B23008DF646 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533309B91E943B23008DF646 /* QuestionController.swift */; };
 		533309BC1E943CD8008DF646 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533309BB1E943CD8008DF646 /* Question.swift */; };
 		5351F6271E92E27500D92D53 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351F6261E92E27500D92D53 /* CellController.swift */; };
@@ -28,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		531104DF1E952A8F00B7AE9F /* ShakeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeExtension.swift; sourceTree = "<group>"; };
+		531104E11E952DC800B7AE9F /* QuestionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionProtocol.swift; sourceTree = "<group>"; };
+		531104E31E95323400B7AE9F /* QuestionBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		531104E51E9540E000B7AE9F /* ResponseBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseBank.swift; sourceTree = "<group>"; };
+		531104E71E95648400B7AE9F /* StatusSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusSelection.swift; sourceTree = "<group>"; };
+		531104EB1E956EB200B7AE9F /* StatusTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTable.swift; sourceTree = "<group>"; };
+		531104ED1E956F9500B7AE9F /* PrioritiesTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrioritiesTable.swift; sourceTree = "<group>"; };
 		533309B91E943B23008DF646 /* QuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 		533309BB1E943CD8008DF646 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5351F6261E92E27500D92D53 /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
@@ -76,6 +90,13 @@
 				538669931E8D741B00C86C9E /* Character.swift */,
 				53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */,
 				533309BB1E943CD8008DF646 /* Question.swift */,
+				531104DF1E952A8F00B7AE9F /* ShakeExtension.swift */,
+				531104E11E952DC800B7AE9F /* QuestionProtocol.swift */,
+				531104E31E95323400B7AE9F /* QuestionBank.swift */,
+				531104E51E9540E000B7AE9F /* ResponseBank.swift */,
+				531104E71E95648400B7AE9F /* StatusSelection.swift */,
+				531104EB1E956EB200B7AE9F /* StatusTable.swift */,
+				531104ED1E956F9500B7AE9F /* PrioritiesTable.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -202,16 +223,23 @@
 			files = (
 				533309BC1E943CD8008DF646 /* Question.swift in Sources */,
 				53BEF6D31E927FC40034B0BF /* CharacterProtocol.swift in Sources */,
+				531104E81E95648400B7AE9F /* StatusSelection.swift in Sources */,
+				531104E21E952DC800B7AE9F /* QuestionProtocol.swift in Sources */,
 				5386699E1E8D8A7100C86C9E /* GenerateStoryController.swift in Sources */,
 				538669A01E8D8AA600C86C9E /* WriteStoryController.swift in Sources */,
+				531104E41E95323400B7AE9F /* QuestionBank.swift in Sources */,
 				538669941E8D741B00C86C9E /* Character.swift in Sources */,
 				538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */,
 				53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */,
 				538669981E8D89F000C86C9E /* FirstInfoController.swift in Sources */,
+				531104E01E952A8F00B7AE9F /* ShakeExtension.swift in Sources */,
 				533309BA1E943B23008DF646 /* QuestionController.swift in Sources */,
+				531104E61E9540E000B7AE9F /* ResponseBank.swift in Sources */,
 				5386699C1E8D8A5500C86C9E /* StatusController.swift in Sources */,
 				5386699A1E8D8A2F00C86C9E /* BackgroundController.swift in Sources */,
 				538669A21E8D8F3300C86C9E /* CharacterInfoController.swift in Sources */,
+				531104EC1E956EB200B7AE9F /* StatusTable.swift in Sources */,
+				531104EE1E956F9500B7AE9F /* PrioritiesTable.swift in Sources */,
 				AA32A9551E8D636F001E8F9E /* AppDelegate.swift in Sources */,
 				5351F6271E92E27500D92D53 /* CellController.swift in Sources */,
 				538669A51E8D9CA700C86C9E /* FinishViewController.swift in Sources */,

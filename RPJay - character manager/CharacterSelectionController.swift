@@ -13,6 +13,7 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var tableView: UITableView!
     public static var characterMemory:[Character]? = [Character]()
     var newCharacter: Character?
+    let cellColors: [UIColor] = [UIColor(red:0.10, green:0.20, blue:0.25, alpha:1.0), UIColor(red:0.24, green:0.38, blue:0.44, alpha:1.0), UIColor(red:0.42, green:0.62, blue:0.77, alpha:1.0)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,9 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CellController
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CharCell") as! CharacterCell
+        
+        cell.backgroundColor = colorRotate(indexPath.row)
         cell.icon.image = CharacterSelectionController.characterMemory?[indexPath.row].characterIcon
         cell.name.text = CharacterSelectionController.characterMemory?[indexPath.row].characterName
         cell.raceAndClass.text = (CharacterSelectionController.characterMemory?[indexPath.row].characterRace)!+" "+(CharacterSelectionController.characterMemory?[indexPath.row].characterClass)!
@@ -57,6 +60,11 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
             self.newCharacter = sender as! Character?
             destinationViewController.newCharacter = self.newCharacter
         }
+    }
+    
+    private func colorRotate(_ key: Int) ->UIColor{
+        let index = key % 3
+        return cellColors[index]
     }
     
 }

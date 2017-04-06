@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CellController: UITableViewCell {
+class CharacterCell: UITableViewCell {
     
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var name:UILabel!

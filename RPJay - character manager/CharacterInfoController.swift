@@ -39,11 +39,11 @@ class CharacterInfoController: UIViewController, CharacterProtocol {
         charStory.text = newCharacter?.characterStory
         
         //Character status
-        strengthValue.text = "\(newCharacter!.strength)"
-        agilityValue.text = "\(newCharacter!.agility)"
-        vitalityValue.text = "\(newCharacter!.vitality)"
-        intelligenceValue.text = "\(newCharacter!.intelligence)"
-        charismaValue.text = "\(newCharacter!.charisma)"
+        strengthValue.text = "\(newCharacter!.statusTable.strength)"
+        agilityValue.text = "\(newCharacter!.statusTable.agility)"
+        vitalityValue.text = "\(newCharacter!.statusTable.vitality)"
+        intelligenceValue.text = "\(newCharacter!.statusTable.intelligence)"
+        charismaValue.text = "\(newCharacter!.statusTable.charisma)"
     }
     
     override func didReceiveMemoryWarning() {

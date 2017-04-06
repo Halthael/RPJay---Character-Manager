@@ -37,6 +37,7 @@ class WriteStoryController: UIViewController, CharacterProtocol, UITextViewDeleg
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if(identifier == "goToStatusWSegue"){
             if(self.textView.text.isEmpty == true){
+                textView.shake()
                 return false
             }
         }

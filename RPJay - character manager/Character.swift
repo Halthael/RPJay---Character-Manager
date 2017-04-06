@@ -17,14 +17,7 @@ class Character: NSObject {
     public var characterRace:String
     public var characterStory:String
     public var characterGender:String
-    
-    public var health:Int
-    public var mana:Int
-    public var strength:Int
-    public var intelligence:Int
-    public var agility:Int
-    public var vitality:Int
-    public var charisma:Int
+    public var statusTable:StatusTable
     
     override init(){
         self.characterIcon = UIImage()
@@ -33,13 +26,7 @@ class Character: NSObject {
         self.characterRace = String()
         self.characterStory = String()
         self.characterGender = String()
-        self.health = 100
-        self.mana = 100
-        self.strength = 10
-        self.intelligence = 10
-        self.agility = 10
-        self.vitality = 10
-        self.charisma = 10
+        self.statusTable = StatusTable()
         super.init()
     }
 }

@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-class QuestionController: UITableViewCell {
+class QuestionCell: UITableViewCell {
+    
+    weak var delegate: QuestionProtocol? = nil
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var aButton: UIButton!
@@ -27,6 +29,28 @@ class QuestionController: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
+    }
+    
+    @IBAction func buttonPressed(_ sender: UIButton){
+        switch sender{
+        case aButton:
+            aAnswer.font = UIFont.boldSystemFont(ofSize: 17.0)
+            bAnswer.font = UIFont.systemFont(ofSize: 17.0)
+            cAnswer.font = UIFont.systemFont(ofSize: 17.0)
+            delegate?.setAnswer(tableViewCell: self, a: true, b: false, c: false)
+        case bButton:
+            aAnswer.font = UIFont.systemFont(ofSize: 17.0)
+            bAnswer.font = UIFont.boldSystemFont(ofSize: 17.0)
+            cAnswer.font = UIFont.systemFont(ofSize: 17.0)
+            delegate?.setAnswer(tableViewCell: self, a: false, b: true, c: false)
+        case cButton:
+            aAnswer.font = UIFont.systemFont(ofSize: 17.0)
+            bAnswer.font = UIFont.systemFont(ofSize: 17.0)
+            cAnswer.font = UIFont.boldSystemFont(ofSize: 17.0)
+            delegate?.setAnswer(tableViewCell: self, a: false, b: false, c: true)
+        default:
+            print("invalid option")
+        }
     }
     
 }

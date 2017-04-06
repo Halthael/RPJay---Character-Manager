@@ -31,12 +31,15 @@ class FirstInfoController: UIViewController , CharacterProtocol, UITextFieldDele
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if(identifier == "goToBackgroundSegue"){
             if (self.nameField.text?.isEmpty == true){
+                self.nameField.shake()
                 return false
             }
             if(self.classField.text?.isEmpty == true){
+                self.classField.shake()
                 return false
             }
             if(self.raceField.text?.isEmpty == true){
+                self.raceField.shake()
                 return false
             }
         }

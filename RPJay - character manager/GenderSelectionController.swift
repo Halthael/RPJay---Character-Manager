@@ -55,6 +55,8 @@ class GenderSelectionController: UIViewController, CharacterProtocol {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if(identifier == "goToFirstInfoSegue"){
             if(genderLabel.text?.isEmpty == true){
+                maleButton.shake()
+                femaleButton.shake()
                 return false
             }
         }
