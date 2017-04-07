@@ -35,7 +35,7 @@ class FinishViewController: UIViewController , CharacterProtocol {
         super.viewWillAppear(animated)
         
         //Character properties
-        //charIcon.image = newCharacter?.icon
+        charIcon.image = UIImage(named:(newCharacter?.icon)!)
         charName.text = newCharacter?.name
         charGender.text = newCharacter?.gender
         charRaceClass.text = (newCharacter?.race)!+" "+(newCharacter?.profession)!
