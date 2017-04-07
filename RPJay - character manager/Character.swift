@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class Character: NSObject {
+    
+    public var objId :NSManagedObjectID
     
     public var icon:String
     
@@ -27,6 +30,7 @@ class Character: NSObject {
         self.story = String()
         self.gender = String()
         self.statusTable = StatusTable()
+        self.objId = NSManagedObjectID()
         super.init()
     }
 }

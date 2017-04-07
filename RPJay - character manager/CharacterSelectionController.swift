@@ -37,8 +37,8 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
                 
                 let character = Character()
                 
-                // TODO: fill character
                 //BASICS
+                character.objId = playerChar.objectID
                 character.name = playerChar.name!
                 character.gender = playerChar.gender!
                 character.profession = playerChar.classProfession!
@@ -75,15 +75,15 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
         tableView.reloadData()
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return characterMemory!.count
     }
     
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "goToCharacterInfoSegue" , sender: characterMemory?[indexPath.row])
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharCell") as! CharacterCell
         
         cell.backgroundColor = colorRotate(indexPath.row)
@@ -96,6 +96,32 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
         cell.healthBar.progress = 1.0
         cell.manaBar.progress = 1.0
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if(editingStyle == UITableViewCellEditingStyle.delete){
+
+            let toBeDeleted = characterMemory?.remove(at: indexPath.row)
+            
+            let request = NSFetchRequest<PlayerChar>(entityName: "PlayerChar")
+            request.predicate = NSPredicate(format: "(SELF = %@)", (toBeDeleted?.objId)!)
+            
+            do {
+                let result = try CMDataController.shared.performFetchRequest(request:request)
+                
+                let charToDelete = result[0]
+                
+                CMDataController.shared.delete(object: charToDelete)
+            } catch {
+                print("Erro!!!")
+            }
+            
+        }
+        tableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
