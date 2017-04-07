@@ -15,7 +15,7 @@ class FinishViewController: UIViewController , CharacterProtocol {
     
     @IBOutlet weak var charIcon: UIImageView!
     @IBOutlet weak var charName: UILabel!
-    //@IBOutlet weak var charGender: UILabel!
+    @IBOutlet weak var charGender: UILabel!
     @IBOutlet weak var charRaceClass: UILabel!
     @IBOutlet weak var charStory: UITextView!
     
@@ -34,14 +34,17 @@ class FinishViewController: UIViewController , CharacterProtocol {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.strengthValue.layer.cornerRadius = 2
         
         self.charName.adjustsFontSizeToFitWidth = true
+        self.charGender.adjustsFontSizeToFitWidth = true
         self.charRaceClass.adjustsFontSizeToFitWidth = true
 
         
         //Character properties
         charIcon.image = UIImage(named:(newCharacter?.icon)!)
         charName.text = newCharacter?.name
+        charGender.text = newCharacter?.gender
         charRaceClass.text = (newCharacter?.race)!+" "+(newCharacter?.profession)!
         charStory.text = newCharacter?.story
         

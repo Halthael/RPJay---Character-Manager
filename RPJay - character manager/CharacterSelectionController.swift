@@ -14,7 +14,7 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var tableView: UITableView!
     public var characterMemory:[Character]? = [Character]()
     var newCharacter: Character?
-    let cellColors: [UIColor] = [UIColor(red:0.10, green:0.20, blue:0.25, alpha:1.0), UIColor(red:0.24, green:0.38, blue:0.44, alpha:1.0), UIColor(red:0.42, green:0.62, blue:0.77, alpha:1.0)]
+    let cellColors: [UIColor] = [UIColor(red:0.10, green:0.20, blue:0.25, alpha:1.0), UIColor(red:0.42, green:0.62, blue:0.77, alpha:1.0)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
