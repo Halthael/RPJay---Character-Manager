@@ -211,7 +211,7 @@
 				TargetAttributes = {
 					AA32A9501E8D636F001E8F9E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = S43QK8TJ2U;
+						DevelopmentTeam = X6FRCZP2YP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -399,7 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S43QK8TJ2U;
+				DEVELOPMENT_TEAM = X6FRCZP2YP;
 				INFOPLIST_FILE = "RPJay - character manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.eldorado.RPJay;
@@ -412,7 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S43QK8TJ2U;
+				DEVELOPMENT_TEAM = X6FRCZP2YP;
 				INFOPLIST_FILE = "RPJay - character manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.eldorado.RPJay;

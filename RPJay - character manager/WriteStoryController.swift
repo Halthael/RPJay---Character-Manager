@@ -17,6 +17,7 @@ class WriteStoryController: UIViewController, CharacterProtocol, UITextViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
+        textView.layer.cornerRadius = 10.0
         self.automaticallyAdjustsScrollViewInsets = false
     }
 

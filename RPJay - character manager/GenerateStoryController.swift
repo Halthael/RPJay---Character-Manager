@@ -86,7 +86,5 @@ class GenerateStoryController: UIViewController , UITableViewDataSource, UITable
         
         answered[index!] = true
         generatedBackground = ResponseBank.respond(response: generatedBackground, index: index!, a: a, b: b, c: c)
-        
-        print(generatedBackground)
     }
 }

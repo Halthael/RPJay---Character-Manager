@@ -95,6 +95,9 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
         cell.mpLabel.text = "MP:"
         cell.healthBar.progress = 1.0
         cell.manaBar.progress = 1.0
+        
+        cell.layer.cornerRadius = 10
+        
         return cell
     }
     
@@ -116,6 +119,7 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
                 let charToDelete = result[0]
                 
                 CMDataController.shared.delete(object: charToDelete)
+                CMDataController.shared.saveContext()
             } catch {
                 print("Erro!!!")
             }

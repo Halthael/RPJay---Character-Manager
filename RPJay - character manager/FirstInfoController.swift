@@ -17,7 +17,7 @@ class FirstInfoController: UIViewController , CharacterProtocol, UITextFieldDele
     @IBOutlet weak var raceField: UITextField!
     @IBOutlet weak var imageCollection: UICollectionView!
     
-    private let imageNames = ["archer.png", "mage.png", "knight.png", "AddButton.png"]
+    private let imageNames = ["archer.png", "mage.png", "knight.png", "default.png"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,6 @@ class FirstInfoController: UIViewController , CharacterProtocol, UITextFieldDele
         
         imageCollection.delegate = self
         imageCollection.dataSource = self
-        
 //        self.automaticallyAdjustsScrollViewInsets = false
         imageCollection.layer.cornerRadius = 5
         
