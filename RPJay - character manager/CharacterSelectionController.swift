@@ -87,7 +87,7 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharCell") as! CharacterCell
         
         cell.backgroundColor = colorRotate(indexPath.row)
-        cell.icon.frame = CGRect(x: 0, y: 0, width: cell.icon.frame.width, height: cell.icon.frame.height)
+        cell.icon.frame = CGRect(x: 0, y: 10, width: cell.icon.frame.width, height: cell.icon.frame.height)
         cell.icon.image = UIImage(named: (characterMemory?[indexPath.row].icon)!)
         cell.name.text = characterMemory?[indexPath.row].name
         cell.raceAndClass.text = (characterMemory?[indexPath.row].race)!+" "+(characterMemory?[indexPath.row].profession)!

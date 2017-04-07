@@ -28,7 +28,9 @@ class FirstInfoController: UIViewController , CharacterProtocol, UITextFieldDele
         imageCollection.delegate = self
         imageCollection.dataSource = self
         
-        self.automaticallyAdjustsScrollViewInsets = false
+//        self.automaticallyAdjustsScrollViewInsets = false
+        imageCollection.layer.cornerRadius = 5
+        imageCollection.layer.
     }
 
     override func didReceiveMemoryWarning() {
