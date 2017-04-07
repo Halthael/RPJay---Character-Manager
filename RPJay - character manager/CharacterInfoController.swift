@@ -12,7 +12,7 @@ class CharacterInfoController: UIViewController, CharacterProtocol {
     
     var newCharacter: Character?
     
-    var charIcon: String = String()
+    @IBOutlet weak var charIcon: UIImageView!
     @IBOutlet weak var charName: UILabel!
     @IBOutlet weak var charGender: UILabel!
     @IBOutlet weak var charRaceClass: UILabel!
@@ -32,7 +32,7 @@ class CharacterInfoController: UIViewController, CharacterProtocol {
         super.viewWillAppear(animated)
         
         //Character properties
-        charIcon = (newCharacter?.icon)!
+        charIcon.image = UIImage(named: (newCharacter?.icon)!)
         charName.text = newCharacter?.name
         charGender.text = newCharacter?.gender
         charRaceClass.text = (newCharacter?.race)!+" "+(newCharacter?.profession)!
