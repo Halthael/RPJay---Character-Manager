@@ -14,7 +14,7 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var tableView: UITableView!
     public var characterMemory:[Character]? = [Character]()
     var newCharacter: Character?
-    let cellColors: [UIColor] = [UIColor(red:0.10, green:0.20, blue:0.25, alpha:1.0), UIColor(red:0.42, green:0.62, blue:0.77, alpha:1.0)]
+    let cellColors: [UIColor] = [#colorLiteral(red: 0.1731739938, green: 0.2433692515, blue: 0.4051870704, alpha: 1), #colorLiteral(red: 0.4762949347, green: 0, blue: 0.01199334674, alpha: 1)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -133,7 +133,7 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
     }
     
     private func colorRotate(_ key: Int) ->UIColor{
-        let index = key % 3
+        let index = key % 2
         return cellColors[index]
     }
     
