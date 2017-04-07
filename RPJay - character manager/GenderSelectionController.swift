@@ -19,7 +19,12 @@ class GenderSelectionController: UIViewController, CharacterProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        genderLabel.text = ""
+        if let gender = newCharacter?.gender{
+            genderLabel.text = gender
+        }else{
+            genderLabel.text = String()
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

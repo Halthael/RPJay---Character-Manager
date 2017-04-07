@@ -26,6 +26,7 @@
 		538669A01E8D8AA600C86C9E /* WriteStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */; };
 		538669A21E8D8F3300C86C9E /* CharacterInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */; };
 		538669A51E8D9CA700C86C9E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669A41E8D9CA700C86C9E /* FinishViewController.swift */; };
+		53BB5D871E97C914008B3CED /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB5D861E97C914008B3CED /* ImageCell.swift */; };
 		53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */; };
 		53BEF6D31E927FC40034B0BF /* CharacterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */; };
 		9686F3D11E93E11800318562 /* CMData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9686F3CF1E93E11800318562 /* CMData.xcdatamodeld */; };
@@ -58,6 +59,7 @@
 		5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteStoryController.swift; sourceTree = "<group>"; };
 		538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterInfoController.swift; sourceTree = "<group>"; };
 		538669A41E8D9CA700C86C9E /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		53BB5D861E97C914008B3CED /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionController.swift; sourceTree = "<group>"; };
 		53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterProtocol.swift; sourceTree = "<group>"; };
 		9686F3D01E93E11800318562 /* CMData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CMData.xcdatamodel; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */,
 				5351F6261E92E27500D92D53 /* CellController.swift */,
 				533309B91E943B23008DF646 /* QuestionController.swift */,
+				53BB5D861E97C914008B3CED /* ImageCell.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */,
 				9686F3D41E93E70A00318562 /* CMDataController.swift in Sources */,
 				53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */,
+				53BB5D871E97C914008B3CED /* ImageCell.swift in Sources */,
 				538669981E8D89F000C86C9E /* FirstInfoController.swift in Sources */,
 				531104E01E952A8F00B7AE9F /* ShakeExtension.swift in Sources */,
 				533309BA1E943B23008DF646 /* QuestionController.swift in Sources */,

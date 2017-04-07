@@ -10,7 +10,6 @@ import Foundation
 
 
 class StatusSelection{
-    
     static func setStatus(table: StatusTable, priorities: PrioritiesTable) -> StatusTable{
         var newTable = table
         
@@ -25,7 +24,7 @@ class StatusSelection{
         newTable.charisma += Int(round(Double(12 * priorities.charismaPrio / priorities.totalPrio)))
         
         newTable.health = 10*table.vitality
-        newTable.mana = 12*table.mana
+        newTable.mana = 12*table.intelligence
         
         return newTable
     }

@@ -57,7 +57,7 @@ class FinishViewController: UIViewController , CharacterProtocol {
 
     @IBAction func finishIsPressed(){
         //Saves character data:
-        CharacterSelectionController.characterMemory?.append(newCharacter!)
+        //CharacterSelectionController.characterMemory?.append(newCharacter!)
         
         let player:PlayerChar = NSEntityDescription.insertNewObject(forEntityName: "PlayerChar", into: CMDataController.shared.persistentContainer.viewContext) as! PlayerChar
         

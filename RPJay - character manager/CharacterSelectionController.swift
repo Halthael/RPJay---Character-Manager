@@ -90,18 +90,8 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharCell") as! CharacterCell
         
         cell.backgroundColor = colorRotate(indexPath.row)
-        if CharacterSelectionController.characterMemory?[indexPath.row].icon == "mage.png" {
-            cell.icon.image = UIImage(named: "mage.png")
-        }
-        if CharacterSelectionController.characterMemory?[indexPath.row].icon == "knight.png" {
-            cell.icon.image = UIImage(named: "warrior.png")
-        }
-        if CharacterSelectionController.characterMemory?[indexPath.row].icon == "archer.png" {
-            cell.icon.image = UIImage(named: "archer.png")
-        }
-        if CharacterSelectionController.characterMemory?[indexPath.row].icon == "default.png" {
-            cell.icon.image = UIImage(named: "default.png")
-        }
+        cell.icon.frame = CGRect(x: 0, y: 0, width: cell.icon.frame.width, height: cell.icon.frame.height)
+        cell.icon.image = UIImage(named: (CharacterSelectionController.characterMemory?[indexPath.row].icon)!)
         cell.name.text = CharacterSelectionController.characterMemory?[indexPath.row].name
         cell.raceAndClass.text = (CharacterSelectionController.characterMemory?[indexPath.row].race)!+" "+(CharacterSelectionController.characterMemory?[indexPath.row].profession)!
         cell.hpLabel.text = "HP:"
