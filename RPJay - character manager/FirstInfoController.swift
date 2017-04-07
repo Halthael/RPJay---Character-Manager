@@ -30,7 +30,7 @@ class FirstInfoController: UIViewController , CharacterProtocol, UITextFieldDele
         
 //        self.automaticallyAdjustsScrollViewInsets = false
         imageCollection.layer.cornerRadius = 5
-        imageCollection.layer.
+        
     }
 
     override func didReceiveMemoryWarning() {

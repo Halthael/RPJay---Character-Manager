@@ -34,6 +34,11 @@ class FinishViewController: UIViewController , CharacterProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.charName.adjustsFontSizeToFitWidth = true
+        self.charGender.adjustsFontSizeToFitWidth = true
+        self.charRaceClass.adjustsFontSizeToFitWidth = true
+
+        
         //Character properties
         charIcon.image = UIImage(named:(newCharacter?.icon)!)
         charName.text = newCharacter?.name
