@@ -43,11 +43,13 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
                 
                 // TODO: fill character
                 //BASICS
-                character.characterName = playerChar.name!
-                character.characterGender = playerChar.gender!
-                character.characterClass = playerChar.classProfession!
-                character.characterRace = playerChar.race!
-                character.characterStory = playerChar.story!
+                character.name = playerChar.name!
+                character.gender = playerChar.gender!
+                character.profession = playerChar.classProfession!
+                character.race = playerChar.race!
+                character.story = playerChar.story!
+                character.icon = playerChar.icon!
+                
                 //SKILLS
                 character.statusTable.agility = Int(playerChar.agility)
                 character.statusTable.charisma = Int(playerChar.charisma)
@@ -88,9 +90,20 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharCell") as! CharacterCell
         
         cell.backgroundColor = colorRotate(indexPath.row)
-        cell.icon.image = CharacterSelectionController.characterMemory?[indexPath.row].characterIcon
-        cell.name.text = CharacterSelectionController.characterMemory?[indexPath.row].characterName
-        cell.raceAndClass.text = (CharacterSelectionController.characterMemory?[indexPath.row].characterRace)!+" "+(CharacterSelectionController.characterMemory?[indexPath.row].characterClass)!
+        if CharacterSelectionController.characterMemory?[indexPath.row].icon == "mage.png" {
+            cell.icon.image = UIImage(named: "mage.png")
+        }
+        if CharacterSelectionController.characterMemory?[indexPath.row].icon == "knight.png" {
+            cell.icon.image = UIImage(named: "warrior.png")
+        }
+        if CharacterSelectionController.characterMemory?[indexPath.row].icon == "archer.png" {
+            cell.icon.image = UIImage(named: "archer.png")
+        }
+        if CharacterSelectionController.characterMemory?[indexPath.row].icon == "default.png" {
+            cell.icon.image = UIImage(named: "default.png")
+        }
+        cell.name.text = CharacterSelectionController.characterMemory?[indexPath.row].name
+        cell.raceAndClass.text = (CharacterSelectionController.characterMemory?[indexPath.row].race)!+" "+(CharacterSelectionController.characterMemory?[indexPath.row].profession)!
         cell.hpLabel.text = "HP:"
         cell.mpLabel.text = "MP:"
         cell.healthBar.progress = 1.0

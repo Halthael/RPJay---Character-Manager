@@ -38,7 +38,7 @@ class GenerateStoryController: UIViewController , UITableViewDataSource, UITable
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         for str in generatedBackground{
-            self.newCharacter?.characterStory.append(str+" ")
+            self.newCharacter?.story.append(str+" ")
         }
         
         if(segue.identifier == "goToStatusGSegue"){

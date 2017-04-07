@@ -35,12 +35,12 @@ class GenderSelectionController: UIViewController, CharacterProtocol {
     @IBAction func genderButtonPressed(_ sender: UIButton){
         
         if sender == maleButton {
-            newCharacter?.characterGender = "Male"
+            newCharacter?.gender = "Male"
             genderLabel.text = "Male"
         }
         
         if sender == femaleButton {
-            newCharacter?.characterGender = "Female"
+            newCharacter?.gender = "Female"
             genderLabel.text = "Female"
         }
     }

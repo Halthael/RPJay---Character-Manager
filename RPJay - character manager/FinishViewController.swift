@@ -35,11 +35,11 @@ class FinishViewController: UIViewController , CharacterProtocol {
         super.viewWillAppear(animated)
         
         //Character properties
-        charIcon.image = newCharacter?.characterIcon
-        charName.text = newCharacter?.characterName
-        charGender.text = newCharacter?.characterGender
-        charRaceClass.text = (newCharacter?.characterRace)!+" "+(newCharacter?.characterClass)!
-        charStory.text = newCharacter?.characterStory
+        //charIcon.image = newCharacter?.icon
+        charName.text = newCharacter?.name
+        charGender.text = newCharacter?.gender
+        charRaceClass.text = (newCharacter?.race)!+" "+(newCharacter?.profession)!
+        charStory.text = newCharacter?.story
         
         //Character status
         strengthValue.text = "\(newCharacter!.statusTable.strength)"
@@ -62,12 +62,12 @@ class FinishViewController: UIViewController , CharacterProtocol {
         let player:PlayerChar = NSEntityDescription.insertNewObject(forEntityName: "PlayerChar", into: CMDataController.shared.persistentContainer.viewContext) as! PlayerChar
         
         //BASICS
-        player.name = newCharacter?.characterName
-        player.gender = newCharacter?.characterGender
-        player.race = newCharacter?.characterRace
-        player.classProfession = newCharacter?.characterClass
-        player.story = newCharacter?.characterStory
-        
+        player.name = newCharacter?.name
+        player.gender = newCharacter?.gender
+        player.race = newCharacter?.race
+        player.classProfession = newCharacter?.profession
+        player.story = newCharacter?.story
+        player.icon = newCharacter?.icon
         //SKILLS
         player.agility = Int16((newCharacter?.statusTable.agility)!)
         player.charisma = Int16((newCharacter?.statusTable.charisma)!)

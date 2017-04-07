@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPJay - character manager/CharacterSelectionController.swift"
-            timestampString = "513191587.021966"
+            timestampString = "513203705.434036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "getAllCharacters()"
             landmarkType = "7">
          </BreakpointContent>

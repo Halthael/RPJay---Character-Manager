@@ -10,22 +10,22 @@ import UIKit
 
 class Character: NSObject {
     
-    public var characterIcon:UIImage
+    public var icon:String
     
-    public var characterName:String
-    public var characterClass:String
-    public var characterRace:String
-    public var characterStory:String
-    public var characterGender:String
+    public var name:String
+    public var profession:String
+    public var race:String
+    public var story:String
+    public var gender:String
     public var statusTable:StatusTable
     
     override init(){
-        self.characterIcon = UIImage()
-        self.characterName = String()
-        self.characterClass = String()
-        self.characterRace = String()
-        self.characterStory = String()
-        self.characterGender = String()
+        self.icon = String()
+        self.name = String()
+        self.profession = String()
+        self.race = String()
+        self.story = String()
+        self.gender = String()
         self.statusTable = StatusTable()
         super.init()
     }

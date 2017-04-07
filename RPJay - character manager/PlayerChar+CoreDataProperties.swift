@@ -28,5 +28,6 @@ extension PlayerChar {
     @NSManaged public var agility: Int16
     @NSManaged public var vitality: Int16
     @NSManaged public var charisma: Int16
-
+    @NSManaged public var icon: String?
+    
 }

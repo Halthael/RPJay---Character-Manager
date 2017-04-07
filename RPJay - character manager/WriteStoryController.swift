@@ -26,7 +26,7 @@ class WriteStoryController: UIViewController, CharacterProtocol, UITextViewDeleg
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        self.newCharacter?.characterStory = textView.text
+        self.newCharacter?.story = textView.text
         
         if(segue.identifier == "goToStatusWSegue"){
             var destinationViewController = segue.destination as! CharacterProtocol

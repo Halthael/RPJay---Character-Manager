@@ -47,10 +47,10 @@ class FirstInfoController: UIViewController , CharacterProtocol, UITextFieldDele
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        self.newCharacter?.characterName = nameField.text!
-        self.newCharacter?.characterClass = classField.text!
-        self.newCharacter?.characterRace = raceField.text!
-        self.newCharacter?.characterIcon = UIImage(named: "default.png")!
+        self.newCharacter?.name = nameField.text!
+        self.newCharacter?.profession = classField.text!
+        self.newCharacter?.race = raceField.text!
+        self.newCharacter?.icon = "default"
         
         if(segue.identifier == "goToBackgroundSegue"){
             var destinationViewController = segue.destination as! CharacterProtocol
