@@ -17,7 +17,7 @@ class FirstInfoController: UIViewController , CharacterProtocol, UITextFieldDele
     @IBOutlet weak var raceField: UITextField!
     @IBOutlet weak var imageCollection: UICollectionView!
     
-    private let imageNames = ["archer.png", "mage.png", "knight.png"]
+    private let imageNames = ["archer.png", "mage.png", "knight.png", "AddButton.png"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,20 +12,16 @@ import CoreData
 class CharacterSelectionController: UIViewController, UITableViewDataSource, UITableViewDelegate, CharacterProtocol {
 
     @IBOutlet weak var tableView: UITableView!
-    public static var characterMemory:[Character]? = [Character]()
+    public var characterMemory:[Character]? = [Character]()
     var newCharacter: Character?
     let cellColors: [UIColor] = [UIColor(red:0.10, green:0.20, blue:0.25, alpha:1.0), UIColor(red:0.24, green:0.38, blue:0.44, alpha:1.0), UIColor(red:0.42, green:0.62, blue:0.77, alpha:1.0)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CharacterSelectionController.characterMemory = self.getAllCharacters()
-        
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
-        
-        
         // Do any additional setup after loading the view.
     }
     
@@ -75,15 +71,16 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        characterMemory = self.getAllCharacters()
         tableView.reloadData()
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return CharacterSelectionController.characterMemory!.count
+        return characterMemory!.count
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToCharacterInfoSegue" , sender: CharacterSelectionController.characterMemory?[indexPath.row])
+        performSegue(withIdentifier: "goToCharacterInfoSegue" , sender: characterMemory?[indexPath.row])
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -91,9 +88,9 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
         
         cell.backgroundColor = colorRotate(indexPath.row)
         cell.icon.frame = CGRect(x: 0, y: 0, width: cell.icon.frame.width, height: cell.icon.frame.height)
-        cell.icon.image = UIImage(named: (CharacterSelectionController.characterMemory?[indexPath.row].icon)!)
-        cell.name.text = CharacterSelectionController.characterMemory?[indexPath.row].name
-        cell.raceAndClass.text = (CharacterSelectionController.characterMemory?[indexPath.row].race)!+" "+(CharacterSelectionController.characterMemory?[indexPath.row].profession)!
+        cell.icon.image = UIImage(named: (characterMemory?[indexPath.row].icon)!)
+        cell.name.text = characterMemory?[indexPath.row].name
+        cell.raceAndClass.text = (characterMemory?[indexPath.row].race)!+" "+(characterMemory?[indexPath.row].profession)!
         cell.hpLabel.text = "HP:"
         cell.mpLabel.text = "MP:"
         cell.healthBar.progress = 1.0
