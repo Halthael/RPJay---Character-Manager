@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class CharacterSelectionController: UIViewController, UITableViewDataSource, UITableViewDelegate, CharacterProtocol {
+class CharacterSelectionController: WoodenViewController, UITableViewDataSource, UITableViewDelegate, CharacterProtocol {
 
     @IBOutlet weak var tableView: UITableView!
     public var characterMemory:[Character]? = [Character]()
@@ -21,7 +21,6 @@ class CharacterSelectionController: UIViewController, UITableViewDataSource, UIT
         
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.reloadData()
         // Do any additional setup after loading the view.
     }
     
