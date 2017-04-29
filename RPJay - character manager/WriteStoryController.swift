@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WriteStoryController: UIViewController, CharacterProtocol, UITextViewDelegate {
+class WriteStoryController: WoodenViewController, CharacterProtocol, UITextViewDelegate {
     
     var newCharacter:Character?
     

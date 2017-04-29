@@ -18,6 +18,7 @@
 		533309BA1E943B23008DF646 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533309B91E943B23008DF646 /* QuestionController.swift */; };
 		533309BC1E943CD8008DF646 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533309BB1E943CD8008DF646 /* Question.swift */; };
 		5351F6271E92E27500D92D53 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351F6261E92E27500D92D53 /* CellController.swift */; };
+		53644B221EB4E9F3005DCFA7 /* RockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53644B211EB4E9F3005DCFA7 /* RockCell.swift */; };
 		538669941E8D741B00C86C9E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669931E8D741B00C86C9E /* Character.swift */; };
 		538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669951E8D89AA00C86C9E /* GenderSelectionController.swift */; };
 		538669981E8D89F000C86C9E /* FirstInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669971E8D89F000C86C9E /* FirstInfoController.swift */; };
@@ -52,6 +53,7 @@
 		533309B91E943B23008DF646 /* QuestionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 		533309BB1E943CD8008DF646 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5351F6261E92E27500D92D53 /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		53644B211EB4E9F3005DCFA7 /* RockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockCell.swift; sourceTree = "<group>"; };
 		538669931E8D741B00C86C9E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		538669951E8D89AA00C86C9E /* GenderSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderSelectionController.swift; sourceTree = "<group>"; };
 		538669971E8D89F000C86C9E /* FirstInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstInfoController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				533309B91E943B23008DF646 /* QuestionController.swift */,
 				53BB5D861E97C914008B3CED /* ImageCell.swift */,
 				531105CE1EB3D6F3004E97C7 /* WoodenViewController.swift */,
+				53644B211EB4E9F3005DCFA7 /* RockCell.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				538669941E8D741B00C86C9E /* Character.swift in Sources */,
 				538669961E8D89AA00C86C9E /* GenderSelectionController.swift in Sources */,
 				9686F3D41E93E70A00318562 /* CMDataController.swift in Sources */,
+				53644B221EB4E9F3005DCFA7 /* RockCell.swift in Sources */,
 				53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */,
 				53BB5D871E97C914008B3CED /* ImageCell.swift in Sources */,
 				538669981E8D89F000C86C9E /* FirstInfoController.swift in Sources */,

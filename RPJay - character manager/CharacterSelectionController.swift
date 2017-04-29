@@ -86,9 +86,9 @@ class CharacterSelectionController: WoodenViewController, UITableViewDataSource,
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharCell") as! CharacterCell
 
         cell.backgroundColor = UIColor.clear
-        cell.background.backgroundColor = colorRotate(indexPath.row)
-        cell.background.layer.cornerRadius = 8
-        cell.icon.frame = CGRect(x: 0, y: 10, width: cell.icon.frame.width, height: cell.icon.frame.height)
+//        cell.cellBackground.backgroundColor = UIColor.clear
+        
+        cell.icon.frame = CGRect(x: 25, y: 15, width: cell.icon.frame.width, height: cell.icon.frame.height)
         cell.icon.image = UIImage(named: (characterMemory?[indexPath.row].icon)!)
         cell.name.text = characterMemory?[indexPath.row].name
         cell.raceAndClass.text = (characterMemory?[indexPath.row].race)!+" "+(characterMemory?[indexPath.row].profession)!

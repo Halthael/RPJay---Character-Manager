@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StatusController: UIViewController , CharacterProtocol {
+class StatusController: WoodenViewController , CharacterProtocol {
     
     var newCharacter:Character?
     

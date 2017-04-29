@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GenerateStoryController: UIViewController , UITableViewDataSource, UITableViewDelegate, CharacterProtocol, QuestionProtocol {
+class GenerateStoryController: WoodenViewController , UITableViewDataSource, UITableViewDelegate, CharacterProtocol, QuestionProtocol {
     
     var newCharacter:Character?
     var questions:[Question] = [Question]()

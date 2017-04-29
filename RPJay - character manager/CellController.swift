@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CharacterCell: UITableViewCell {
+class CharacterCell: RockCell {
     
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var name:UILabel!
@@ -18,7 +18,7 @@ class CharacterCell: UITableViewCell {
     @IBOutlet weak var mpLabel:UILabel!
     @IBOutlet weak var healthBar:UIProgressView!
     @IBOutlet weak var manaBar:UIProgressView!
-    @IBOutlet weak var background: UIView!
+//    @IBOutlet weak var cellBackground: UIView!
     
     
     override func awakeFromNib() {

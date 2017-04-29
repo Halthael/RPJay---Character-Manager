@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class FinishViewController: UIViewController , CharacterProtocol {
+class FinishViewController: WoodenViewController , CharacterProtocol {
     
     var newCharacter:Character?
     
@@ -24,13 +24,13 @@ class FinishViewController: UIViewController , CharacterProtocol {
     @IBOutlet weak var vitalityValue: UILabel!
     @IBOutlet weak var intelligenceValue: UILabel!
     @IBOutlet weak var charismaValue: UILabel!
+    @IBOutlet weak var paperBack: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        // Do any additional setup after loading the view.
+        paperBack.image = UIImage(named: "paper.png")
     }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

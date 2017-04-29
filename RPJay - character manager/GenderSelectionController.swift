@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GenderSelectionController: UIViewController, CharacterProtocol {
+class GenderSelectionController: WoodenViewController, CharacterProtocol {
     
     var newCharacter:Character?
     

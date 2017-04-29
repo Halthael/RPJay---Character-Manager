@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BackgroundController: UIViewController , CharacterProtocol {
+class BackgroundController: WoodenViewController , CharacterProtocol {
     
     var newCharacter:Character?
     

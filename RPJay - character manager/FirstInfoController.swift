@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstInfoController: UIViewController , CharacterProtocol, UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class FirstInfoController: WoodenViewController , CharacterProtocol, UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var newCharacter:Character?
     

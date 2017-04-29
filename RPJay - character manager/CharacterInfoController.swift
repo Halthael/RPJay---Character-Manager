@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharacterInfoController: UIViewController, CharacterProtocol {
+class CharacterInfoController: WoodenViewController, CharacterProtocol {
     
     var newCharacter: Character?
     
@@ -23,9 +23,12 @@ class CharacterInfoController: UIViewController, CharacterProtocol {
     @IBOutlet weak var vitalityValue: UILabel!
     @IBOutlet weak var intelligenceValue: UILabel!
     @IBOutlet weak var charismaValue: UILabel!
+    @IBOutlet weak var paperBack: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        paperBack.image = UIImage(named: "paper.png")
     }
     
     override func viewWillAppear(_ animated: Bool) {
