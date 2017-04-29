@@ -13,9 +13,11 @@ class WriteStoryController: WoodenViewController, CharacterProtocol, UITextViewD
     var newCharacter:Character?
     
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var paperBack: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        paperBack.image = UIImage(named: "paper.png")
         textView.delegate = self
         textView.layer.cornerRadius = 10.0
         self.automaticallyAdjustsScrollViewInsets = false

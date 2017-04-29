@@ -16,9 +16,14 @@ class GenerateStoryController: WoodenViewController , UITableViewDataSource, UIT
     var generatedBackground = ["", "", ""]
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var paperBack: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        paperBack.image = UIImage(named: "paper.png")
+        
+        tableView.layer.cornerRadius = 8.5
         tableView.dataSource = self
         tableView.delegate = self
         tableView.allowsSelection = false

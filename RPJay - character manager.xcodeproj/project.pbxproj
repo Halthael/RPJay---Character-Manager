@@ -28,6 +28,7 @@
 		538669A01E8D8AA600C86C9E /* WriteStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */; };
 		538669A21E8D8F3300C86C9E /* CharacterInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */; };
 		538669A51E8D9CA700C86C9E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538669A41E8D9CA700C86C9E /* FinishViewController.swift */; };
+		53AE30531EB53BE700F268EF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE30521EB53BE700F268EF /* InfoViewController.swift */; };
 		53BB5D871E97C914008B3CED /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB5D861E97C914008B3CED /* ImageCell.swift */; };
 		53BEF6D11E927C5F0034B0BF /* CharacterSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */; };
 		53BEF6D31E927FC40034B0BF /* CharacterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */; };
@@ -63,6 +64,7 @@
 		5386699F1E8D8AA600C86C9E /* WriteStoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteStoryController.swift; sourceTree = "<group>"; };
 		538669A11E8D8F3300C86C9E /* CharacterInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterInfoController.swift; sourceTree = "<group>"; };
 		538669A41E8D9CA700C86C9E /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		53AE30521EB53BE700F268EF /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		53BB5D861E97C914008B3CED /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		53BEF6D01E927C5F0034B0BF /* CharacterSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionController.swift; sourceTree = "<group>"; };
 		53BEF6D21E927FC40034B0BF /* CharacterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterProtocol.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				53BB5D861E97C914008B3CED /* ImageCell.swift */,
 				531105CE1EB3D6F3004E97C7 /* WoodenViewController.swift */,
 				53644B211EB4E9F3005DCFA7 /* RockCell.swift */,
+				53AE30521EB53BE700F268EF /* InfoViewController.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				53BEF6D31E927FC40034B0BF /* CharacterProtocol.swift in Sources */,
 				531104E81E95648400B7AE9F /* StatusSelection.swift in Sources */,
 				531104E21E952DC800B7AE9F /* QuestionProtocol.swift in Sources */,
+				53AE30531EB53BE700F268EF /* InfoViewController.swift in Sources */,
 				531105CF1EB3D6F3004E97C7 /* WoodenViewController.swift in Sources */,
 				5386699E1E8D8A7100C86C9E /* GenerateStoryController.swift in Sources */,
 				538669A01E8D8AA600C86C9E /* WriteStoryController.swift in Sources */,
