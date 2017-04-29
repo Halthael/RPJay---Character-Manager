@@ -18,6 +18,8 @@ class CharacterCell: UITableViewCell {
     @IBOutlet weak var mpLabel:UILabel!
     @IBOutlet weak var healthBar:UIProgressView!
     @IBOutlet weak var manaBar:UIProgressView!
+    @IBOutlet weak var background: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

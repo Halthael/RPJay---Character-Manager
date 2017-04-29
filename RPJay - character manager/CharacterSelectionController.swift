@@ -84,8 +84,10 @@ class CharacterSelectionController: WoodenViewController, UITableViewDataSource,
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharCell") as! CharacterCell
-        
-        cell.backgroundColor = colorRotate(indexPath.row)
+
+        cell.backgroundColor = UIColor.clear
+        cell.background.backgroundColor = colorRotate(indexPath.row)
+        cell.background.layer.cornerRadius = 8
         cell.icon.frame = CGRect(x: 0, y: 10, width: cell.icon.frame.width, height: cell.icon.frame.height)
         cell.icon.image = UIImage(named: (characterMemory?[indexPath.row].icon)!)
         cell.name.text = characterMemory?[indexPath.row].name
@@ -94,8 +96,6 @@ class CharacterSelectionController: WoodenViewController, UITableViewDataSource,
         cell.mpLabel.text = "MP:"
         cell.healthBar.progress = 1.0
         cell.manaBar.progress = 1.0
-        
-        cell.layer.cornerRadius = 10
         
         return cell
     }
